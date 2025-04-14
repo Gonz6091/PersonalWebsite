@@ -1,0 +1,52 @@
+.Home {
+    background-color: #7FA1B1;
+}
+
+#Header{
+ text-align: center;
+ font-family: cursive;
+ background-color: #ffffff;
+ padding: 20px;
+ width: 100%;
+ box-shadow: #9B735A 0px 0px 20px;
+}
+
+#navbar{
+    text-align: center;
+    background-color: #435058;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 35%;
+    border-radius: 15px;
+    border: 2px solid #435058;
+    box-shadow: 0 0 20px #9B735A;
+}
+
+a {
+    font-size: 20px;
+    word-spacing: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+#personal-photo {
+    width: 30%;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    float: left;
+    margin-right: 70px;
+}
+
+p {
+    width: 20%;
+    float: right;
+    margin-left: 0px;
+
+}
