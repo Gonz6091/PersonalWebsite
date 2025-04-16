@@ -1,11 +1,19 @@
+/* This is the background color for the home page */
 .Home {
     background-color: #7FA1B1;
 }
 
+/* This is the background color for the about page */
 .About {
     background-color: #7FA1B1;
 }
 
+/* This is the background color for the portfolio page */
+.portfolio {
+    background-color: #7FA1B1;
+}
+
+/* Header and Nav bar styling. It's consistent across all three pages */
 body, h1 {
     margin: 0;
     padding: 0;
@@ -48,6 +56,8 @@ a {
     color: #ffffff;  
 }
 
+/* This is the styling for the home page */
+
 #personal-photo {
     width: 30%;
     border-radius: 15px;
@@ -79,53 +89,52 @@ p {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 20px;
-}
+} 
+
+/* This is the styling for the about page */
 
 #Fantasyphoto {
     width: 25%;
     border-radius: 15px;
     display: block;
     box-shadow: #435058 0px 0px 20px;
-    float:right;
-    margin-left: 0px;
-    margin-right: 200px;
+    float: right;
+    margin: 0 0 20px 20px;
+    margin-right: 2%;
 }
 
 #OfNightphoto {
-    width: 40%;
+    width: 30%;
     border-radius: 15px;
     display: block;
     box-shadow: #435058 0px 0px 20px;
-    float: left;
-    margin-left: 60px;
-    margin-right: 30px;
-    margin-top: 120px;
-    rotate: 270deg;
+    margin: 0 0 20px 20px;
+    margin-top: 5%;
+    float: right;
+    transform: rotate(270deg);
 }
 
 #Travelphoto {
     width: 25%;
-    height: 20%;
     border-radius: 15px;
+    height: auto;
     display: block;
     box-shadow: #435058 0px 0px 20px;
-    float:right;
-    margin-left: 0px;
-    margin-right: 200px;
-    margin-bottom: 30px;
+    margin: 10px auto;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    float: right;
+    margin-top: 0%;
 }
 
 h3 {
     font-family: cursive;
-    font-size: 30px;
-    text-align: center;
     font-size: 2.5rem;
+    text-align: center;
     color: #ffffff;
-    word-spacing: 20px;
+    word-spacing: 5px;
     text-shadow: #9B735A 0px 0px 20px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    margin-right: 200px;
+    margin: 20px auto;
 }
 
 .aGlimpse {
@@ -136,29 +145,33 @@ h3 {
     text-decoration-style: solid;
     text-underline-offset: 1px;
     text-underline-position: under;
-    margin-top: 80px;
+    margin-top: 5%;
 }
 
 .AboutText {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.6rem;
-    text-align: center;
+    font-size: 1.4rem;
+    text-align: justify;
     word-spacing: 5px;
     line-height: 1.5;
-    margin-bottom: 30px;
+    margin: 0;
     display: inline-block;
-    width: 50%;
-    margin-left: 50px;
+    width: 65%;
     margin-top: 0%;
+    margin-left: 1%;
 }
 
 .AboutSectionFantasy {
-    margin-top: 150px;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
 }
 
 .AboutSectionMusic {
+    display: block;
     margin-top: 300px;
-    margin-right: 50px
 }
 
 .AboutSectionTravel {
@@ -166,13 +179,91 @@ h3 {
 }
 
 #FantasyTitle{
-    margin-right: 920px;
+    margin-right: 10%;
 }
 
 #MusicTitle{
-    margin-left: 920px;
+    margin-right: 10%;
 }
 
 #TravelTitle{
-    margin-right: 920px;
+    margin-right: 10%;
 }
+
+@media screen and (max-width: 768px) {
+    #Fantasyphoto, #OfNightphoto, #Travelphoto {
+        width: 80%;
+        margin: 10px auto; 
+    }
+
+    h3 {
+    font-size: 1.5rem;
+    margin: 10px auto;
+    }
+
+    .AboutText {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .aGlimpse {
+    margin-top: 2%;   
+ }
+
+}
+
+/* This is the styling for the portfolio page */
+
+.ProjectHeaders {
+    float: left;
+    margin-left: 100px;
+    margin-top: 350px;
+    margin-right: 100px;
+    border: 2px #937B5A;
+    width: 20%;
+    border-radius: 15px;
+    background-color: #435058;
+    padding: 5px;
+    box-shadow: #435058 0px 0px 20px;
+}
+
+.PortfolioText {
+    width: 60%;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+#DevPhoto {
+    width: 45%;
+    border-radius: 15px;
+    display: block;
+    box-shadow: #435058 0px 0px 20px;
+    float:right;
+    margin-left: 0px;
+    margin-right: 100px;
+    margin: 40px;
+}
+
+#FitnessPhoto{
+    width: 45%;
+    border-radius: 15px;
+    display: block;
+    box-shadow: #435058 0px 0px 20px;
+    float:right;
+    margin-left: 0px;
+    margin-right: 100px;
+    margin: 40px;
+}
+
+#VideoGamePhoto {
+    width: 45%;
+    border-radius: 15px;
+    display: block;
+    box-shadow: #435058 0px 0px 20px;
+    float:right;
+    margin-left: 0px;
+    margin-right: 100px;
+    margin: 40px;
+}
+
