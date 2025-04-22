@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Style.css">
     <script src="javascript.js" defer></script>
 </head>
-<body class="Home">
+<body class="Contact">
     <h1 id="Header">Michael Gonzalez-Kelly</h1>
     <div class="NavContainer">
         <nav id="navbar">
@@ -17,17 +17,20 @@
             <a href="./contact.html"> CONTACT </a>
         </nav>
     </div>
+    
+    <div class="Form-Container">
+        <form id="ContactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <div class="ThreeWordHeader">
-        <h2> Creative - Dependable - Innovative </h2>
-    </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <div class="content-container">
-        <img src="042A1972.jpg" alt="Personal Photo" id="personal-photo">
-    </div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" cols="50"></textarea>
 
-    <div id="MottoText">
-        <p>Collaborating with passion, creativity, and purpose—bringing innovative visions to life through teamwork and artistry.</p>
+            <button type="submit">Send</button>
+        </form>
     </div>
-        
-    </body>
+</body>
+</html>

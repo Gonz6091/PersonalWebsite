@@ -13,6 +13,11 @@
     background-color: #7FA1B1;
 }
 
+/* This is the background color for the contact page */
+.Contact {
+    background-color: #7FA1B1;
+}
+
 /* Header and Nav bar styling. It's consistent across all three pages */
 body, h1 {
     margin: 0;
@@ -29,29 +34,58 @@ body, h1 {
     background-color: #435058;
     padding: 20px;
     box-shadow: #435058 0px 0px 20px;
-    margin: 0;
+    width: 100%;
+}
+
+@media (max-width: 425px) {
+    #Header {
+        font-size: 2rem;
+    }
+}
+
+.NavContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
     background-color: #435058;
     padding: 10px;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 50px;
     width: 50%;
     border-radius: 15px;
     border: 2px solid #435058;
-    box-shadow: 0 0 20px #435058;
-    display: block;
+    box-shadow: 0 0 10px #435058;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     margin-bottom: 40px;
 }
 
+@media (max-width: 681px){
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding: 10px;
+    }
+
+    a { 
+        padding: 5px;
+        text-decoration: underline;
+        text-decoration-color: #ffffff;
+    }
+}
+
 a {
     font-size: 1.2rem;
-    word-spacing: 110px;
+    word-spacing: 10px;
     text-decoration: none;
     color: #ffffff;  
 }
@@ -62,16 +96,19 @@ a {
     width: 30%;
     border-radius: 15px;
     margin: 0 auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: #435058 0px 0px 20px;
 }
 
 h2 {
     font-family: cursive;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
     color: #ffffff;
     word-spacing: 20px;
+    margin-top: 20px;
     margin-bottom: 30px;
     text-shadow: #9B735A 0px 0px 20px; 
 }
@@ -86,46 +123,33 @@ p {
     text-transform: bold;
     font-family: cursive;
     font-size: 1.6rem;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 20px;
 } 
 
+#MottoText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 425px) {
+    .ThreeWordHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    h2 {
+        display: flex;
+        font-size: 1.5rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
 /* This is the styling for the about page */
-
-#Fantasyphoto {
-    width: 25%;
-    border-radius: 15px;
-    display: block;
-    box-shadow: #435058 0px 0px 20px;
-    float: right;
-    margin: 0 0 20px 20px;
-    margin-right: 2%;
-}
-
-#OfNightphoto {
-    width: 30%;
-    border-radius: 15px;
-    display: block;
-    box-shadow: #435058 0px 0px 20px;
-    margin: 0 0 20px 20px;
-    margin-top: 5%;
-    float: right;
-    transform: rotate(270deg);
-}
-
-#Travelphoto {
-    width: 25%;
-    border-radius: 15px;
-    height: auto;
-    display: block;
-    box-shadow: #435058 0px 0px 20px;
-    margin: 10px auto;
-    margin-bottom: 3%;
-    margin-right: 2%;
-    float: right;
-    margin-top: 0%;
-}
 
 h3 {
     font-family: cursive;
@@ -135,17 +159,6 @@ h3 {
     word-spacing: 5px;
     text-shadow: #9B735A 0px 0px 20px;
     margin: 20px auto;
-}
-
-.aGlimpse {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    text-shadow: none;
-    text-decoration: underline #435058 2px;
-    text-decoration-style: solid;
-    text-underline-offset: 1px;
-    text-underline-position: under;
-    margin-top: 5%;
 }
 
 .AboutText {
@@ -161,36 +174,104 @@ h3 {
     margin-left: 1%;
 }
 
+.aGlimpse {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow: none;
+    text-decoration: underline #435058 2px;
+    text-decoration-style: solid;
+    text-underline-offset: 1px;
+    text-underline-position: under;
+    margin-top: 5%;
+}
+
+#FantasyTitle {
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 2.5rem;
+    position: relative;
+    top: -10px;
+}
+
 .AboutSectionFantasy {
-    display: block;
+    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
+    align-items: flex-start;
+    gap: 10px;
 }
 
-.AboutSectionMusic {
-    display: block;
-    margin-top: 300px;
-}
-
-.AboutSectionTravel {
-    margin-top: 150px;
-}
-
-#FantasyTitle{
-    margin-right: 10%;
+#Fantasyphoto {
+    width: 30%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: right;
+    box-shadow: #435058 0px 0px 10px;
+    margin-left: 5%;
+    margin-right: 3%;
 }
 
 #MusicTitle{
-    margin-right: 10%;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 2.5rem;
+    position: relative;
+    top: -10px;
+}
+
+.AboutSectionMusic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#OfNightphoto {
+    width: 30%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: right;
+    box-shadow: #435058 0px 0px 10px;
+    margin-left: 5%;
+    margin-right: 3%;
+    transform: rotate(270deg) scale(1.5);
 }
 
 #TravelTitle{
-    margin-right: 10%;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    font-size: 2.5rem;
+    position: relative;
+    top: -10px;
 }
 
-@media screen and (max-width: 768px) {
+.AboutSectionTravel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#Travelphoto {
+    width: 25%;
+    border-radius: 15px;
+    height: auto;
+    display: block;
+    box-shadow: #435058 0px 0px 20px;
+    margin: 10px auto;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    float: right;
+    margin-top: 0%;
+}
+
+
+@media screen and (max-width: 425px) {
     #Fantasyphoto, #OfNightphoto, #Travelphoto {
         width: 80%;
         margin: 10px auto; 
@@ -214,56 +295,141 @@ h3 {
 
 /* This is the styling for the portfolio page */
 
+.PortfolioSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Project {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
 .ProjectHeaders {
-    float: left;
-    margin-left: 100px;
-    margin-top: 350px;
-    margin-right: 100px;
-    border: 2px #937B5A;
-    width: 20%;
+    text-align: left;
+    max-width: 300px;
+    justify-self: center;
+    padding: 15px;
     border-radius: 15px;
-    background-color: #435058;
-    padding: 5px;
+    background-color:#435058;
     box-shadow: #435058 0px 0px 20px;
 }
 
 .PortfolioText {
-    width: 60%;
-    display: inline-block;
-    margin-right: 30px;
-    margin-left: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
 }
 
-#DevPhoto {
-    width: 45%;
+#DevPhoto, #FitnessPhoto, #VideoGamePhoto {
+    width: 100%;
+    max-width: 250px;
+    justify-self: center;
     border-radius: 15px;
-    display: block;
+    margin: 2%;
     box-shadow: #435058 0px 0px 20px;
-    float:right;
-    margin-left: 0px;
-    margin-right: 100px;
-    margin: 40px;
+}
+ @media (max-width: 768px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #navbar {
+        width: 80%;
+    }
+    .PortfolioSection {
+        grid-template-columns: 1fr;
+    }
+    .Project {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .ProjectHeaders, .PortfolioText {
+        justify-self: center;
+    }
+ }
+
+/* This is the styling for the Contact page */
+
+.Form-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
 }
 
-#FitnessPhoto{
-    width: 45%;
+#ContactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
     border-radius: 15px;
-    display: block;
-    box-shadow: #435058 0px 0px 20px;
-    float:right;
-    margin-left: 0px;
-    margin-right: 100px;
-    margin: 40px;
+    box-shadow: #435058 0px 0px 40px;
+    width: 65%;
+    color: #9B735A;
+    text-shadow: #937B5A 0px 0px 20px;
 }
 
-#VideoGamePhoto {
-    width: 45%;
-    border-radius: 15px;
-    display: block;
-    box-shadow: #435058 0px 0px 20px;
-    float:right;
-    margin-left: 0px;
-    margin-right: 100px;
-    margin: 40px;
+label {
+    font-style: italic;
+}
+input {
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 75%;
+    border-radius: 10px;
+    border: #9B735A 1px solid;
 }
 
+label {
+    padding: 10px;
+}
+
+textarea {
+    width: 75%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: #9B735A 1px solid;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #9B735A;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #9B735A;
+}
+
+#message {
+    font-style: italic;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+button:hover {
+    background-color: #9B735A;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: #9B735A 0px 0px 7px;
+}
